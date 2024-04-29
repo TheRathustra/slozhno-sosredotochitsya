@@ -2,18 +2,46 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  background-image: url('../images/cover-image.png');
+  margin: 0 auto;
+  background-image: var(--bg-image);
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  background-size: contain;
+  background-size: cover;
+  color: var(--text-color, #000);
+  background-color: var(--bg-color, #000);
+  font-family: var(--main-font, 'Courier New', monospace);
 }
 
 .header {
   display: grid;
-  grid-template-columns: 1fr min-content 1fr;
-  justify-content: center; 
+  grid-template-rows: 1fr min-content 1fr;
   align-items: center;
+  min-height: 768px;
+  height: 100vh;
+  padding: 20px;
+}
+
+.decorated-zone {
+  position: relative;
+}
+
+.rec-icon::before {
+  content: '';
+}
+
+.rec-icon::after {
+  content: 'REC';
+}
+
+.rec-icon {
+  align-self: end;
+  justify-self: end;
+} 
+
+.header__theme-menu {
+  align-self: start;
+  justify-self: center;
 }
 
 .header__theme-menu-list {
@@ -21,9 +49,15 @@
   gap: 23px;
 }
 
+.footer {
+  height: 100vh;
+}
+
 @media (max-width: 768px) {
 
   .header__theme-menu-list {
     flex-direction: column;
+    justify-content: end;
+    align-items: end;
   }
 }
