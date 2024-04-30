@@ -3,27 +3,52 @@
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   margin: 0 auto;
+  color: var(--text-color, #000);
+  font-family: var(--main-font, 'Courier New', monospace);
+  background-color: var(--bg-color, #000);
   background-image: var(--bg-image);
   background-repeat: no-repeat;
   background-position: center;
-  background-attachment: fixed;
   background-size: cover;
-  color: var(--text-color, #000);
-  background-color: var(--bg-color, #000);
-  font-family: var(--main-font, 'Courier New', monospace);
+  background-attachment: fixed;
 }
+
+/* header */
 
 .header {
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   align-items: center;
-  min-height: 768px;
   height: 100vh;
+  min-height: 768px;
   padding: 20px;
 }
-
+ 
 .decorated-zone {
   position: relative;
+}
+
+.decorated-zone::before,
+.decorated-zone::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  inline-size: 25px;
+  block-size: 25px;
+}
+
+.decorated-zone::before {
+  border-inline-end: 1px solid red;
+  border-block-start: 1px solid red;
+  inset-inline-end: clamp(10px, 0.0286rem + 2.5445vw, 20px);
+  inset-block-start: clamp(10px, 0.0286rem + 2.5445vw, 20px);
+}
+
+.decorated-zone::after {
+  border-inline-start: 1px solid red;
+  border-block-end: 1px solid red;
+  inset-inline-start: clamp(10px, 0.0286rem + 2.5445vw, 20px);
+  inset-block-end: clamp(10px, 0.0286rem + 2.5445vw, 20px);
 }
 
 .rec-icon::before {
@@ -35,13 +60,15 @@
 }
 
 .rec-icon {
-  align-self: end;
-  justify-self: end;
-} 
+  position: absolute;
+  z-index: -1;
+  inset-inline-end: 20px;
+  inset-block-start: 20px;
+}
 
 .header__theme-menu {
-  align-self: start;
   justify-self: center;
+  align-self: start;
 }
 
 .header__theme-menu-list {
@@ -50,7 +77,11 @@
 }
 
 .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
+  min-height: 768px;
 }
 
 @media (max-width: 768px) {
