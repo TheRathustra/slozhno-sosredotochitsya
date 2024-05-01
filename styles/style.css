@@ -32,7 +32,7 @@
 
 .header__theme-menu-list {
   display: flex;
-  gap: clamp(0.5625rem, -0.2724rem + 3.5623vw, 1.4375rem);
+  gap: 24px;
 }
 
 .header__theme-menu-button {
@@ -211,11 +211,11 @@
 .gallery-img {
   inline-size: 100%;
   block-size: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .gallery-list__item {
-  object-fit: cover;
-  object-position: center;
   inline-size: 100%;
   block-size: 100%;
 }
@@ -225,6 +225,7 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, fit-content);
   gap: clamp(5px, -0.5821rem + 3.8168vw, 20px);
+  row-gap: 12px;
   margin-block-start: clamp(10px, 0.0286rem + 2.5445vw, 20px);
 }
 
@@ -288,6 +289,8 @@
   .header__theme-menu-list {
     flex-direction: column;
     justify-self: end;
+    gap: 8px;
+    padding-inline-end: 5px;
   }
 
   .header__theme-menu {
@@ -342,6 +345,7 @@
   .gallery-list {
     display: flex;
     flex-direction: column;
+    row-gap: 6px;
   }
 
   .header-text {
