@@ -6,7 +6,6 @@
   color: var(--text-color, #000);
   font-family: var(--main-font, 'Courier New', monospace);
   font-size: 18px;
-  background-color: var(--bg-color, #000);
   background-image: var(--bg-image);
   background-repeat: no-repeat;
   background-position: center;
