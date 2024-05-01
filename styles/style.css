@@ -266,6 +266,7 @@
   padding: clamp(10px, 0.0286rem + 2.5445vw, 20px);
   block-size: 100vh;
   min-block-size: 768px;
+  margin-block-start: 60px;
 }
 
 .footer__title {
@@ -295,6 +296,22 @@
     flex-direction: column;
   }
 
+  .content-what .content__title {
+    max-inline-size: calc(1/4 * 100%);
+  }
+
+  .header-text {
+    inline-size: calc(100vw - 56%);
+  }
+
+  .content-why {
+    gap: 20px;
+  }
+
+  .content-how {
+    gap: 20px;
+  }
+
 }
 
 @media (max-width: 375px) {
@@ -311,7 +328,7 @@
 
   .content-how {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
   }
 
   .content-mt {
@@ -325,6 +342,19 @@
 
   .header-text {
     inline-size: 100%;
+  }
+
+  .header {
+    min-block-size: 668px;
+  }
+
+  .footer {
+    margin-block-start: 40px;
+    min-block-size: 668px;
+  }
+
+  .content-what .content__title {
+    max-inline-size: 100%;
   }
 
 }
