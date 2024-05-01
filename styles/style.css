@@ -59,13 +59,14 @@
 
 .header-title {
   justify-self: start;
+  margin-inline-start: -20px;
   text-shadow: 4px 4px 0 var(--accent-color, #ff0070);
-  margin-inline-start: -15px;
 }
 
 .header-text {
   justify-self: end;
   align-self: center;
+  width: calc(100vw - 54%);
   color: var(--text-color, #000);
   font-weight: 700;
   font-size: 18px;
@@ -275,8 +276,6 @@
   .header__theme-menu-list {
     flex-direction: column;
     justify-self: end;
-    
-
   }
 
   .header__theme-menu {
@@ -313,10 +312,8 @@
   }
 
   .gallery-list {
-
     display: flex;
     flex-direction: column;
-
   }
 
 }

@@ -23,7 +23,15 @@
 @media (prefers-color-scheme: light) {
   
   :root {
-      --bg-image: url(../images/cover-image-light.png);   
+      --bg-image: url(../images/cover-image-light.png);
+      --bg-color: #FFC2E6;
+      --border-color: #353430;
+      --bg-text-color: #FFC2E6; 
+      --text-color: #353430;
+      --secondary-text-color: #353430;
+      --title-text-color: #FFC2E6;
+      --secondary-title-text-color: #353430;
+      --accent-color: #FF0070;
     }
 
 }
