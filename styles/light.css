@@ -10,7 +10,7 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --bg-image: url(../images/cover-image-light.png);
-  --bg-color: #FFC2E6;
+  --bg-color: transparent;
   --border-color: #353430;
   --bg-text-color: #FFC2E6;
   --text-color: #353430;
@@ -25,7 +25,7 @@
   
   :root {
       --bg-image: url(../images/cover-image-light.png);
-      --bg-color: #FFC2E6;
+      --bg-color: transparent;
       --border-color: #353430;
       --bg-text-color: #FFC2E6;
       --text-color: #353430;
