@@ -55,12 +55,12 @@
   color: var(--title-text-color, #000);
   font-weight: 700;
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  text-align: left;
 }
 
 .header-title {
   justify-self: start;
   text-shadow: 4px 4px 0 var(--accent-color, #ff0070);
+  margin-inline-start: -15px;
 }
 
 .header-text {
@@ -292,6 +292,10 @@
 }
 
 @media (max-width: 375px) {
+
+  .header-title {
+    margin-inline-start: 0;
+  }
 
   .content-why {
     display: flex;

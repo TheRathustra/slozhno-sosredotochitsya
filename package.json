@@ -1,7 +1,7 @@
 {
   "name": "slozhno-sosredotochitsya",
   "version": "1.0.0",
-  "description": "* Ссылка на макет: https://www.figma.com/file/lCqDbWjgllgJtb2hmCqfyX/%236-Сложно-сосредоточиться\r * Ссылка на репозиторий https://github.com/TheRathustra/slozhno-sosredotochitsya",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "check": "prettier --check './src/**/*.{html,css,js}'",
