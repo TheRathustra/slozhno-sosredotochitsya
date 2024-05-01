@@ -14,6 +14,7 @@
   --border-color: #353430;
   --bg-text-color: #FFC2E6;
   --text-color: #353430;
+  --rec-color: transparent;
   --secondary-text-color: #353430;
   --title-text-color: #FFC2E6;
   --secondary-title-text-color: #353430;
@@ -28,6 +29,7 @@
       --border-color: #353430;
       --bg-text-color: #FFC2E6;
       --text-color: #353430;
+      --rec-color: transparent;
       --secondary-text-color: #353430;
       --title-text-color: #FFC2E6;
       --secondary-title-text-color: #353430;
