@@ -155,17 +155,17 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 10px;
-  margin-top: 60px;
+  margin-block-start: 60px;
 }
 
 .content-mt {
-  margin-top: 80px;
+  margin-block-start: 80px;
 }
 
 .content-what .content__list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin-top: 20px;
+  margin-block-start: 20px;
 }
 
 .content-how {
@@ -221,7 +221,7 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, fit-content);
   gap: clamp(10px, 0.0286rem + 2.5445vw, 20px);
-  margin-top: 20px;
+  margin-block-start: 20px;
 }
 
 .sunset-picture {
@@ -306,7 +306,7 @@
   .content-why {
     display: flex;
     flex-direction: column;
-    margin-top: 40px; 
+    margin-block-start: 40px;
   }
 
   .content-how {
@@ -315,12 +315,16 @@
   }
 
   .content-mt {
-    margin-top: 50px;
+    margin-block-start: 50px;
   }
 
   .gallery-list {
     display: flex;
     flex-direction: column;
+  }
+
+  .header-text {
+    inline-size: 100%;
   }
 
 }
