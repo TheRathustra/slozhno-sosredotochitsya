@@ -254,7 +254,7 @@
 
 .gallery-img {
   object-fit: cover;
-  object-position: center;
+  object-position: center top;
   inline-size: 100%;
   block-size: 100%;
 }
@@ -274,6 +274,7 @@
   gap: clamp(5px, -0.5821rem + 3.8168vw, 20px);
   row-gap: 13px;
   margin-block-start: clamp(10px, 0.0286rem + 2.5445vw, 20px);
+  grid-auto-flow: dense;
 }
 
 .sunset-picture {
@@ -380,7 +381,7 @@
   }
 
   .header-title {
-    margin-inline-start: 0;
+    margin-inline-start: 5px;
   }
 
   .content-mt {
