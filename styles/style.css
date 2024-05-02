@@ -51,7 +51,7 @@
 
 .header__theme-menu-list {
   display: flex;
-  gap: 24px;
+  gap: 10px;
 }
 
 .header__theme-menu-button {
@@ -65,6 +65,7 @@
   background-color: transparent;
   transition: border 1s;
   cursor: pointer;
+  inline-size: 70px;
 }
 
 .header__theme-menu-button:hover {
@@ -80,7 +81,8 @@
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid var(--border-color, #ff0070);
+  /* border: 1px solid var(--border-color, #ff0070); */
+  outline: 1px solid var(--border-color, #ff0070);
   pointer-events: none;
 }
 
@@ -172,7 +174,7 @@
   padding: 0 clamp(10px, 0.0286rem + 2.5445vw, 20px) 0;
 }
 
-.content__article {
+.content__article-container {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -205,6 +207,12 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 10px;
+}
+
+.content-how__container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .content__title {
@@ -323,16 +331,26 @@
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
 
+  .header-text {
+    inline-size: calc(100vw - 56%);
+  }
+
   .header__theme-menu-list {
     flex-direction: column;
     justify-self: end;
-    gap: 8px;
-    padding-inline-end: 5px;
   }
 
   .header__theme-menu {
     justify-self: end;
     align-self: center;
+  }
+
+  .content-why {
+    gap: 20px;
+  }
+
+  .content-how {
+    gap: 20px;
   }
 
   .content-what .content__list {
@@ -344,24 +362,40 @@
     max-inline-size: calc(1/4 * 100%);
   }
 
-  .header-text {
-    inline-size: calc(100vw - 56%);
-  }
+}
+
+@media (375px < width < 768px) {
 
   .content-why {
-    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-block-start: 40px;
   }
 
   .content-how {
-    gap: 20px;
+    display: flex;
+    flex-direction: column;
   }
 
-}
+  .gallery-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+} 
 
 @media (max-width: 375px) {
 
+  .header {
+    min-block-size: 668px;
+  }
+
   .header-title {
     margin-inline-start: 0;
+  }
+
+  .content-mt {
+    margin-block-start: 50px;
   }
 
   .content-why {
@@ -375,8 +409,8 @@
     flex-direction: column;
   }
 
-  .content-mt {
-    margin-block-start: 50px;
+  .content-what .content__title {
+    max-inline-size: 100%;
   }
 
   .gallery-list {
@@ -389,17 +423,9 @@
     inline-size: 100%;
   }
 
-  .header {
-    min-block-size: 668px;
-  }
-
   .footer {
     margin-block-start: 40px;
     min-block-size: 668px;
-  }
-
-  .content-what .content__title {
-    max-inline-size: 100%;
   }
 
 }
