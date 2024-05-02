@@ -5,6 +5,21 @@
 
 :root {
   --main-font: 'IBM Plex mono';
+  --title-font-size: 18px;
+  --text-font-size: 18px;
+  --bg-image: url(../images/cover-image-light.png);
+  --bg-color: transparent;
+  --border-color: #353430;
+  --bg-text-color: #FFC2E6;
+  --text-color: #353430;
+  --rec-color: transparent;
+  --secondary-text-color: #353430;
+  --title-text-color: #FFC2E6;
+  --secondary-title-text-color: #353430;
+  --accent-color: #FF0070;
+  --frame-color: #353430;
+  --link-color: #353430;
+  --button-color-hover: rgba(50, 49, 45, 0.4);
 }
 
  

@@ -19,6 +19,9 @@
   --title-text-color: #DB00FF;
   --secondary-title-text-color: #ff0070;
   --accent-color: #ff0070;
+  --frame-color: #ff0070;
+  --link-color: #F1B2CE;
+  --button-color-hover: rgba(255, 0, 112, 0.4);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -34,6 +37,9 @@
       --title-text-color: #DB00FF;
       --secondary-title-text-color: #ff0070;
       --accent-color: #ff0070;
+      --frame-color: #ff0070;
+      --link-color: #F1B2CE;
+      --button-color-hover: rgba(255, 0, 112, 0.4);
     }
 
 }
