@@ -17,7 +17,7 @@
 .link {
   color: var(--link-color, #ff0070);
   text-decoration: none;
-  text-shadow: 1px 2px 0 var(--accent-color, #ff0070);
+  text-shadow: 1px 2px 0 var(--link-shadow-color, #ff0070);
   transition: border-block-end 1s;
 }
 

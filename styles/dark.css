@@ -21,6 +21,7 @@
   --accent-color: #ff0070;
   --frame-color: #ff0070;
   --link-color: #F1B2CE;
+  --link-shadow-color: rgba(255, 0, 112, 1);
   --button-color-hover: rgba(255, 0, 112, 0.4);
 }
 
@@ -39,6 +40,7 @@
       --accent-color: #ff0070;
       --frame-color: #ff0070;
       --link-color: #F1B2CE;
+      --link-shadow-color: rgba(255, 0, 112, 1);
       --button-color-hover: rgba(255, 0, 112, 0.4);
     }
 
